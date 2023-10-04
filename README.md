@@ -1,47 +1,62 @@
-# Getting Started with Create React App
+# Boas-vindas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Seja <strong>bem-vindo</strong>! Esse é o meu Portfólio pessoal para armazenar os meus projetos e contar um pouco mais sobre mim.
 
-## Available Scripts
+# Sobre
 
-In the project directory, you can run:
+## Projeto criado com typescript usando o seguinte comando:
 
-### `npm start`
+```
+npx create-react-app alura-studies --template typescript --use-npm
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Foi usado SASS (.scss) para a estilização, seguindo os passos:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<i>[Link de Explicação do sass](https://www.npmjs.com/package/sass)</i>
 
-### `npm test`
+### Comando de instalação
+```
+npm install --save-dev sass
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usei o typescript-plugin-css-modules
 
-### `npm run build`
+### O que é?
+é uma abordagem que permite encapsular estilos em módulos separados, de modo que as classes CSS definidas em um módulo não afetem outros módulos. Cada módulo CSS possui um escopo isolado. <br/>
+Não é tão necessário em um projeto pequeno como esse mas usei para treinar.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<i>[Link de Explicação do typescript-plugin-css-modules](https://www.npmjs.com/package/typescript-plugin-css-modules)</i>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Código de instalação
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm install -D typescript-plugin-css-modules
+```
 
-### `npm run eject`
+### Preparação para usar o plugin
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Adicionei a seguinte linha de código dentro do tsconfig.json
+```json
+{
+  "compilerOptions": {
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+  }
+}
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Como foi usado no meu código
+- Nome da extensão fica da seguinte forma:<br/>
+-> `Name.module.scss`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Importar a classe como uma função da seguinte forma:<br/>
+-> `import style from './Name.module.scss';`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Usar o nome da classe da seguinte fomra:<br/>
+-> `<div className={style.Name}>`<br/>
+ou <i>(para casos de caracteres especiais em sua classe)</i><br/>
+-> `<div className={style["Name-name"]}>`
 
-## Learn More
+### Resultado
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-"# Portfolio-loeFagundes" 
+Dessa forma cada classe vai ficar com um nome único em seu navegador como:<br/>
+`class="Name__+2cMi"`
