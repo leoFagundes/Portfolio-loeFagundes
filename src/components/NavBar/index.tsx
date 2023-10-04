@@ -13,21 +13,20 @@ export default function NavBar() {
         {anchor: 'Certificates', name: 'Certificados', icon: 'assets/img/nav-icons/certificado.png'},
     ]
 
-    const [isDropdownOpen, setDropdownOpen] = useState(false);
+    const [isOpen, setOpen] = useState(false) 
 
-    const toggleDropdown = () => {
-      if (isDropdownOpen) {
-        const menu = document.querySelector('style.menuItensIcon ul');
-        if (menu) {
-          menu.classList.add(style.hide);
-          setTimeout(() => {
-            setDropdownOpen(false);
-          }, 200);
-        }
+    const toggleMenu = () => {
+      const elemento = document.getElementsByClassName(style.menuItensIcon)[0];
+      if (!isOpen) {
+        elemento.classList.remove(style.unshow);
+        elemento.classList.add(style.show);
       } else {
-        setDropdownOpen(true);
+        elemento.classList.remove(style.show);
+        elemento.classList.add(style.unshow);
       }
-    };
+      setOpen(!isOpen);
+      console.log(isOpen)
+    }
 
     const handleSmoothScroll = (targetId: string) => {
         const targetElement = document.getElementById(targetId);
@@ -47,7 +46,7 @@ export default function NavBar() {
         <nav className={style.navbar}>
             <div>
                 <h3>/*</h3>
-                <h3>Portfolio</h3>
+                <h2>Portfolio</h2>
                 <h3>*/</h3>
             </div>
             <ul className={style.menuItens}>
@@ -56,15 +55,15 @@ export default function NavBar() {
                 ))}
             </ul>
 
-            <section className={`${style.menuItensIcon} ${isDropdownOpen ? style.open : ''}`}>
-                <ul className={isDropdownOpen ? style.show : ''}>
+            <section className={`${style.menuItensIcon}`}>
+                <ul>
                     {menuItens.map(({anchor, name, icon}, index) => (
                         <li key={index}><a onClick={() => handleSmoothScroll(anchor)}><img src={icon} alt={`${name}-icon`}/></a></li>
                     ))}
                 </ul>
             </section>
             <section className={style.hamburguerSection }>
-                <Hamburguer isOpen={isDropdownOpen} toggleMenu={toggleDropdown} />
+                <Hamburguer isOpen={isOpen} toggleMenu={toggleMenu} />
             </section>
         </nav>
     )
