@@ -5,7 +5,7 @@
 
 body {
     background-color: rgb(0, 0, 0);
-    min-width: 300px;
+    min-width: 335px;
 }
 
 .main {
@@ -21,18 +21,18 @@ body::-webkit-scrollbar {
     width: 9px; /* Largura da barra de rolagem vertical */
   }
   
-  /* Alça da barra de rolagem */
-  body::-webkit-scrollbar-thumb {
-    background-color: #24a359; /* Cor da alça da barra de rolagem */
-    border-radius: 1px; /* Arredondar as bordas da alça da barra de rolagem */
-  }
-  
-  /* Barra de rolagem de fundo */
-  body::-webkit-scrollbar-track {
-    background-color: #333333; /* Cor de fundo da barra de rolagem */
-  }
-  
-  /* Estilizar a alça quando o mouse passar por cima */
-  body::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(63, 196, 114);
-  }
+/* Alça da barra de rolagem */
+body::-webkit-scrollbar-thumb {
+background-color: #24a359; /* Cor da alça da barra de rolagem */
+border-radius: 1px; /* Arredondar as bordas da alça da barra de rolagem */
+}
+
+/* Barra de rolagem de fundo */
+body::-webkit-scrollbar-track {
+background-color: #333333; /* Cor de fundo da barra de rolagem */
+}
+
+/* Estilizar a alça quando o mouse passar por cima */
+body::-webkit-scrollbar-thumb:hover {
+background-color: rgb(63, 196, 114);
+}

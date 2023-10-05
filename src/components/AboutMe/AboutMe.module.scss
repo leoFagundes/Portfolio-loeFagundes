@@ -1,5 +1,97 @@
 .AboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     background-color: rgb(11, 11, 11);
-    min-height: 50vh;
+    min-height: 450px;
+
+    .conteudoSobreMim {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        width: 80%;
+        flex: 1;
+
+        p {
+            word-wrap: break-word;
+            color: white;
+            flex: 2;
+            padding: 15px;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                color: #54d489;
+
+                &:hover {
+                    color: #54d489;
+                    text-shadow: 0 0 5px rgba(55, 255, 188, 0.836);
+                    font-size: 16.1px;
+                }
+            }
+        }
+
+        .animation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 350px;
+            flex: 1.2;
+
+            .image {
+                height: 100px;
+                width: 100px;
+                position: absolute;
+                object-fit: contain;
+                scale: 4;
+
+                &:last-of-type {
+                    opacity: 0.8;
+                    filter: blur(0.1px);
+                }
+            }
+
+            .blurImage {
+                height: 95px;
+                width: 95px;
+                position: absolute;
+                object-fit: contain;
+                scale: 3.9;
+                filter: blur(0.6px);
+                opacity: 0.35;
+                filter: saturate(1.3);
+            }
+
+            .rotateRight {
+                animation: rotateRight 80s linear infinite;
+            }
+
+            .rotateLeft {
+                animation: rotateLeft 75s linear infinite;
+            }
+
+            @media screen and (max-width: 1080px) {
+                display: none;
+            }
+        }
+    }
+}
+
+@keyframes rotateRight {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+@keyframes rotateLeft {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
 }
