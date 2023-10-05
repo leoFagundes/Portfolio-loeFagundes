@@ -1,0 +1,158 @@
+.leftSlide {
+    width: 100%;
+    width: 400px;
+    min-width: 400px;
+    opacity: 0.5;
+    scale: 0.8;
+    position: absolute;
+    transform: translateX(-500px);
+
+    @media screen and (max-width: 1150px) {
+        width: 300px;
+        min-width: 300px;
+        transform: translateX(-450px);
+    }
+
+    @media screen and (max-width: 999px) {
+        display: none;
+    }
+}
+
+.rightSlide {
+    width: 100%;
+    width: 400px;
+    min-width: 400px;
+    opacity: 0.5;
+    scale: 0.8;
+    position: absolute;
+    transform: translateX(500px);
+
+    @media screen and (max-width: 1150px) {
+        width: 300px;
+        min-width: 300px;
+        transform: translateX(450px);
+    }
+
+    @media screen and (max-width: 999px) {
+        display: none;
+    }
+}
+
+.currentSlide {
+    width: 100%;
+    width: 400px;
+    min-width: 250px;
+
+    @media screen and (max-width: 500px) {
+        width: 350px;
+    }
+
+    @media screen and (max-width: 430px) {
+        width: 300px;
+
+    }
+}
+
+.item {
+    height: 360px;
+    width: 100%;
+    flex-shrink: 0;
+    border: 1px solid #54d489;
+    border-radius: 20px;
+    box-shadow: 0 1px 13px #54d48977;
+    margin-top: 5px;
+    background-color: #000000bb;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &.active {
+        display: block;
+        animation-name: next-item;
+        animation-duration: 0.5s;
+    }
+
+    &.hidden {
+        display: none;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .image {
+            height: 160px;
+            width: 80%;
+            margin-top: 30px;
+            /*background-color: #54d489;*/
+            box-shadow: 0 1px 10px #a1a1a177;
+            border-radius: 2px;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            -webkit-animation: slide 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        .name {
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            -webkit-animation: slide 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        .description {
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            width: 85%;
+            -webkit-animation: slide 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+            @media screen and (max-width: 430px) {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+      -webkit-transform: translateY(17px);
+        transform: translateY(17px);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: translateY(3px);
+         transform: translateY(3px);
+         opacity: 0.3;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slide {
+    0% {
+        -webkit-transform: translateY(17px);
+          transform: translateY(17px);
+          opacity: 0;
+      }
+      50% {
+          -webkit-transform: translateY(3px);
+           transform: translateY(3px);
+           opacity: 0.3;
+      }
+      100% {
+        -webkit-transform: translateY(0);
+          transform: translateY(0);
+          opacity: 1;
+      }
+}

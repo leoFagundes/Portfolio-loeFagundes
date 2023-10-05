@@ -1,5 +1,18 @@
 .Projects {
     width: 100%;
     background-color: rgb(15, 15, 15);
-    min-height: 450px;
+    min-height: 500px;
+
+    .projectsContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .slides {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+ 
 }

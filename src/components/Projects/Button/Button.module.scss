@@ -1,0 +1,39 @@
+.buttons {
+    button {
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        cursor: pointer;
+        margin-top: 18px;
+        -webkit-tap-highlight-color: transparent;
+
+        img {
+            height: 30px;
+
+            &:hover {
+                scale: 1.1;
+            }
+
+            &:active {
+                scale: 0.98;
+            }
+        }
+    }
+
+    .firstSlide {
+        opacity: 0;
+        pointer-events: none;
+
+        &:hover {
+            cursor: default;
+        }
+    }
+
+    .lastSlide {
+        opacity: 0;
+        pointer-events: none;
+
+        &:hover {
+            cursor: default;
+        }
+    }
+}
