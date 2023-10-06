@@ -1,7 +1,25 @@
+import { useState } from 'react';
 import SocialNetworks from '../SocialNetworks';
 import style from './Me.module.scss';
+import { motion } from "framer-motion";
 
 export default function Me() {
+
+    const [isDragging, setIsDragging] = useState(false);
+    const [dragX, setDragX] = useState(0);
+    const [dragY, setDragY] = useState(0);
+  
+    const handleDragStart = () => {
+      setIsDragging(true);
+    };
+  
+    const handleDragEnd = () => {
+      setIsDragging(false);
+      // Reset the position to the original state
+      setDragX(0);
+      setDragY(0);
+    };
+
     return (
         <section id='Me' className={style.Me}>
             <section>
@@ -27,9 +45,34 @@ export default function Me() {
                     </div>
                 </div>
                 <div className={style.imageSection}>
-                    <div className={style.border}>
+                    <motion.div 
+                        className={style.border}
+                        drag
+                        onDragStart={handleDragStart}
+                        onDragEnd={handleDragEnd}
+                        // Define a dynamic animate object based on isDragging state
+                        animate={{
+                            x: isDragging ? 0 : dragX,
+                            y: isDragging ? 0 : dragY,
+                        }}
+                        // Set the initial position
+                        initial={{ x: 0, y: 0 }}
+                        // Enable smooth animation
+                        transition={{ type: "spring", stiffness: 100, damping: 10 }}
+                        // Update the position when dragging
+                        dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
+                        dragElastic={0.65} //Valor de eslasticidade
+                        dragMomentum={false}
+                        whileTap={{cursor: 'grabbing', scale: 0.95}}
+                        whileHover={{ scale: 1.05 }}
+                        // Update the dragX and dragY values while dragging
+                        onDrag={(event, info) => {
+                            setDragX(info.offset.x);
+                            setDragY(info.offset.y);
+                        }}
+                    >
                         <img src='assets/img/eu.jpg' className={style.profileImage} alt="me-image" />
-                    </div>
+                    </motion.div>
                 </div>
             </section>
         </section>

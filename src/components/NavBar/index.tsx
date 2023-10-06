@@ -1,6 +1,7 @@
 import Hamburguer from './Hamburguer';
 import style from './NavBar.module.scss';
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 
 
 export default function NavBar() {
@@ -58,7 +59,15 @@ export default function NavBar() {
             <section className={`${style.menuItensIcon}`}>
                 <ul>
                     {menuItens.map(({anchor, name, icon}, index) => (
-                        <li key={index}><a onClick={() => handleSmoothScroll(anchor)}><img src={icon} alt={`${name}-icon`}/></a></li>
+                        <li key={index}>
+                          <a onClick={() => handleSmoothScroll(anchor)}>
+                            <motion.img 
+                              src={icon} 
+                              alt={`${name}-icon`}
+                              whileTap={{ scale: 0.75 }}
+                            />
+                          </a>
+                        </li>
                     ))}
                 </ul>
             </section>

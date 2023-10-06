@@ -105,7 +105,12 @@ function Certificados() {
                                 <p>Ano de Conclusão: <span>{ano}</span></p>
                             </div>
                             <a className={style.pdfLink} target='_blank' rel="noreferrer" href={link} >
-                                <button>Ver certificado</button>
+                                <motion.button
+                                  whileHover={{ scale: 1.05 }}
+                                  whileTap={{ scale: 0.95 }}
+                                >
+                                  Ver certificado
+                                </motion.button>
                             </a>
                         </motion.div>
                     ))}
