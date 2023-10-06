@@ -60,3 +60,15 @@ ou <i>(para casos de caracteres especiais em sua classe)</i><br/>
 
 Dessa forma cada classe vai ficar com um nome único em seu navegador como:<br/>
 `class="Name__+2cMi"`
+
+## Instalando o framer-motion
+
+O framer-motion é uma biblioteca para adicionar animações aos elementos HTML, instalamos da seguinte forma:
+
+```
+npm install framer-motion
+```
+
+Para importar foi usado o seguinte comando:
+
+`import { motion } from "framer-motion"`
