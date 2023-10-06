@@ -2,6 +2,7 @@
     display: none;
     flex-direction: column;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 
     .bar {
         width: 30px;
