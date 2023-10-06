@@ -18,13 +18,13 @@
     font-size: 17px;
     color: white;
     flex: 1;
-    width: 70%;
+    width: 60%;
 
     .carousel{
         cursor: grab;
         overflow: hidden;
-        border-right: 1px solid #ffffff1f;
-        border-left: 1px solid #ffffff1f;
+        border-right: 1px solid #ffffff4b;
+        border-left: 1px solid #ffffff4b;
         margin-right: -10px;
         margin-left: -10px;
         width: 100%;
@@ -112,12 +112,16 @@
             border: none;
             margin-top: 18px;
             -webkit-tap-highlight-color: transparent;
-            opacity: 0.1;
-            padding: 2px;
+            opacity: 0.2;
+            padding: 3px;
 
             img {
                 height: 30px;
             }
         }
+    }
+
+    @media screen and (max-width: 1000px) {
+        width: 85%;
     }
 }
