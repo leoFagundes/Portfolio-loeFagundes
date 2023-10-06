@@ -24,7 +24,7 @@ function Certificados() {
 
   const certificados: Certificado[] = [
     {
-      nome: 'Ciência da Computação - O Curso de Harvard, no Brasil',
+      nome: 'Ciência da Computação - Harvard, no Brasil',
       instituicao: 'CC50',
       horas: '70',
       ano: '2022',
