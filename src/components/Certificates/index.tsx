@@ -117,7 +117,9 @@ function Certificados() {
                 </motion.div>
             </motion.div>
             <div className={style.staticButton}>
-                <button><img src='assets/img/right-arrow-white.png' alt='right-arrow'/></button>
+                <button>
+                  <img src='assets/img/right-arrow-white.png' alt='right-arrow'/>
+                </button>
             </div>
         </section>
     </section>
