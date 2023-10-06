@@ -26,7 +26,7 @@ export default function Projects() {
         name: 'Portfólio 2.0', 
         des: 'Esse foi o segundo Portfólio que fiz para tentar criar uma versão mais atualizada do portfólio anterior.', 
         ling: 'HTML, CSS, JavaScript, React', 
-        link: '#' },
+        link: 'https://github.com/leoFagundes/Portfolio-leoFagundes' },
     { 
         imageName: 'assets/img/projects/lykke.png', 
         name: 'Aplicação Web - Lykke', 
