@@ -7,7 +7,7 @@ Seja <strong>bem-vindo</strong>! Esse é o meu Portfólio pessoal para armazenar
 ## Projeto criado com typescript usando o seguinte comando:
 
 ```
-npx create-react-app alura-studies --template typescript --use-npm
+npx create-react-app nome-projeto --template typescript --use-npm
 ```
 
 ## Foi usado SASS (.scss) para a estilização, seguindo os passos:
