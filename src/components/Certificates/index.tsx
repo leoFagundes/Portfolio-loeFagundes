@@ -59,6 +59,13 @@ function Certificados() {
       link: 'assets/pdf/Curso React_ desenvolvendo com JavaScript - Alura.pdf',
     },
     {
+      nome: 'React: Escrevendo com Typescript',
+      instituicao: 'Alura',
+      horas: '12',
+      ano: '2023',
+      link: 'assets/pdf/Leonardo Fagundes - Curso React_ escrevendo com Typescript - Alura.pdf',
+    },
+    {
       nome: 'Excel Intermediário - Presencial',
       instituicao: 'Dytz Informática',
       horas: '20',
