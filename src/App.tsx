@@ -1,4 +1,6 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './Global.css';
+import AluraCertificates from './Pages/AluraCertificates';
 import AboutMe from './components/AboutMe';
 import Certificates from './components/Certificates';
 import Me from './components/Me';
@@ -8,14 +10,21 @@ import Skills from './components/Skills';
 
 function App() {
   return (
-    <main className="main">
-      <NavBar />
-      <Me />
-      <AboutMe />
-      <Projects />
-      <Skills />
-      <Certificates />
-    </main>
+    <Router>
+      <main className="main">
+        <Routes>
+          <Route path="/" element={<>
+            <NavBar />
+            <Me />
+            <AboutMe />
+            <Projects />
+            <Skills />
+            <Certificates />
+          </>} />
+          <Route path="/Certificados-Alura" element={<AluraCertificates />} />
+        </Routes>
+      </main>
+    </Router>
   );
 }
 

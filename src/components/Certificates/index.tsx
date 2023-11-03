@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Titulo from '../Title';
 import style from './Certificates.module.scss';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 interface Certificado {
   nome: string;
@@ -38,32 +39,11 @@ function Certificados() {
       link: 'assets/pdf/Python Impressionador - Leonardo Cantieri Taube Fagundes.pdf',
     },
     {
-      nome: 'JavaScript para web: crie páginas dinâmicas',
+      nome: 'Certificados da Alura',
       instituicao: 'Alura',
-      horas: '10',
-      ano: '2023',
-      link: 'assets/pdf/Leonardo Fagundes - Curso JavaScript para Web_ Crie páginas dinâmicas - Alura.pdf',
-    },
-    {
-      nome: 'CSS: FlexBox e Layouts responsivos',
-      instituicao: 'Alura',
-      horas: '6',
-      ano: '2023',
-      link: 'assets/pdf/Leonardo Fagundes - Curso CSS_ Flexbox e layouts responsivos - Alura.pdf',
-    },
-    {
-      nome: 'React: Desenvolvimento com JavaScript',
-      instituicao: 'Alura',
-      horas: '14',
-      ano: '2023',
-      link: 'assets/pdf/Curso React_ desenvolvendo com JavaScript - Alura.pdf',
-    },
-    {
-      nome: 'React: Escrevendo com Typescript',
-      instituicao: 'Alura',
-      horas: '12',
-      ano: '2023',
-      link: 'assets/pdf/Leonardo Fagundes - Curso React_ escrevendo com Typescript - Alura.pdf',
+      horas: '-',
+      ano: '-',
+      link: '-',
     },
     {
       nome: 'Excel Intermediário - Presencial',
@@ -111,6 +91,7 @@ function Certificados() {
                                 <p>Horas: <span>{horas} horas</span></p>
                                 <p>Ano de Conclusão: <span>{ano}</span></p>
                             </div>
+                            {instituicao != 'Alura' ?
                             <a className={style.pdfLink} target='_blank' rel="noreferrer" href={link} >
                                 <motion.button
                                   whileHover={{ scale: 1.05 }}
@@ -119,6 +100,16 @@ function Certificados() {
                                   Ver certificado
                                 </motion.button>
                             </a>
+                            :
+                            <Link to='Certificados-Alura' className={style.pdfLink} target='_blank'>
+                                <motion.button
+                                  whileHover={{ scale: 1.05 }}
+                                  whileTap={{ scale: 0.95 }}
+                                >
+                                  Ver certificado
+                                </motion.button>
+                            </Link>
+                            }
                         </motion.div>
                     ))}
                 </motion.div>

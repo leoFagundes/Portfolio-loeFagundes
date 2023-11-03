@@ -72,3 +72,12 @@ npm install framer-motion
 Para importar foi usado o seguinte comando:
 
 `import { motion } from "framer-motion"`
+
+
+## Usando react-router-dom
+
+O React Router é uma das bibliotecas de roteamento mais populares em aplicativos React.
+
+```
+npm install react-router-dom
+```

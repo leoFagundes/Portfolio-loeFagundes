@@ -1,0 +1,28 @@
+.AluraCertificatesContainer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.certificate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+
+    img {
+        height: 400px;
+        box-shadow: 0 0 10px rgba(44, 131, 189, 0.5);
+        
+
+        &:hover {
+            filter: saturate(1.2);
+            scale: 0.99;
+            box-shadow: 0 0 15px rgba(44, 131, 189, 0.7);
+        }
+
+        @media screen and (max-width: 650px) {
+            height: 200px;
+        }
+    }
+}
