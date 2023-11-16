@@ -67,7 +67,7 @@ function Certificados() {
       link: 'assets/pdf/Certificado - LAC4.pdf',
     },
   ];
-
+  
   return (
     <section id='Certificates' className={style.Certificates}>
         <Titulo titleName="Certificados" />

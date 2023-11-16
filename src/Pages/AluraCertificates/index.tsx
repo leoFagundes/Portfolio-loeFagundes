@@ -35,6 +35,14 @@ const aluraCertificates = [
         linkPdf: 'assets/pdf/Leonardo Fagundes - Curso React_ escrevendo com Typescript - Alura.pdf',
         link: 'assets/img/aluraImages/Leonardo Fagundes - Curso React_ escrevendo com Typescript - Alura.png',
     },
+    {
+        nome: 'Tailwind CSS: Estilizando a sua página com classes utilitárias',
+        instituicao: 'Alura',
+        horas: '8',
+        ano: '2023',
+        linkPdf: 'assets/pdf/Leonardo Fagundes - Curso Tailwind CSS_ estilizando a sua página com classes utilitárias - Alura.pdf',
+        link: 'assets/img/aluraImages/Leonardo Fagundes - Curso Tailwind.png',
+    },
 ]
 
 export default function AluraCertificates() {
