@@ -25,7 +25,7 @@ const aluraCertificates = [
         horas: '14',
         ano: '2023',
         linkPdf: 'assets/pdf/Curso React_ desenvolvendo com JavaScript - Alura.pdf',
-        link: 'assets/img/aluraImages/Curso React_ desenvolvendo com JavaScript - Alura.png',
+        link: 'assets/img/aluraImages/Leonardo Fagundes - Curso React_ desenvolvendo com JavaScript - Alura.png',
     },
     {
         nome: 'React: Escrevendo com Typescript',
@@ -42,6 +42,13 @@ const aluraCertificates = [
         ano: '2023',
         linkPdf: 'assets/pdf/Leonardo Fagundes - Curso Tailwind CSS_ estilizando a sua página com classes utilitárias - Alura.pdf',
         link: 'assets/img/aluraImages/Leonardo Fagundes - Curso Tailwind.png',
+    },{
+        nome: 'Git e GitHub: Compartilhando e colaborando em projetos',
+        instituicao: 'Alura',
+        horas: '8',
+        ano: '2023',
+        linkPdf: 'assets/pdf/Leonardo Fagundes - Curso Git e GitHub_ compartilhando e colaborando em projetos - Alura.pdf',
+        link: 'assets/img/aluraImages/Leonardo Fagundes - Curso Git.png',
     },
 ]
 
