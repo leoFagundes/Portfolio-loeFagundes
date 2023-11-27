@@ -16,18 +16,19 @@ export default function Projects() {
         link: 'https://github.com/leoFagundes/AplicacaoWeb-Imikino'
     },
     { 
+        imageName: 'assets/img/projects/portfolio2.png', 
+        name: 'Portfólio 2.0', 
+        des: 'Esse foi o segundo Portfólio que fiz para tentar criar uma versão mais atualizada do portfólio anterior.', 
+        ling: 'HTML, CSS, JavaScript, React', 
+        link: 'https://github.com/leoFagundes/Portfolio-leoFagundes',
+        demo: 'https://leofagundes.vercel.app/' },
+    { 
         imageName: 'assets/img/projects/portfolio1.png', 
         name: 'Portfólio 1.0', 
         des: 'Esse foi o primeiro Portfólio que fiz para ter um lugar onde colocar os meus projetos e falar um pouco mais sobre mim.', 
         ling: 'HTML, CSS, JavaScript', 
         link: 'https://github.com/leoFagundes/Portfolio',
         demo: 'https://portfolioleo-1.netlify.app/' },
-    { 
-        imageName: 'assets/img/projects/portfolio2.png', 
-        name: 'Portfólio 2.0', 
-        des: 'Esse foi o segundo Portfólio que fiz para tentar criar uma versão mais atualizada do portfólio anterior.', 
-        ling: 'HTML, CSS, JavaScript, React', 
-        link: 'https://github.com/leoFagundes/Portfolio-leoFagundes' },
     { 
         imageName: 'assets/img/projects/lykke.png', 
         name: 'Aplicação Web - Lykke', 
