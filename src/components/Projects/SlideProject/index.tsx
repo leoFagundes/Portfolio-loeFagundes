@@ -30,6 +30,8 @@ export default function SlideProject({currentProjectIndex, currentProject, curre
                                 </div>
                                 <div className={style.description}>
                                     <i>Descrição do projeto {name} oculta momentaneamente.</i>
+                                </div>
+                                <div className={style.description}>
                                     <div className={style.linksButtons}>
                                         <a href={link} target='_blank'><button type='button'>Repo <RxGithubLogo /></button></a>
                                         {demo ? <a href={demo} target='_blank'><button type='button'>Demo <RiExternalLinkLine /></button></a> : ''}
@@ -56,6 +58,8 @@ export default function SlideProject({currentProjectIndex, currentProject, curre
                                 </div>
                                 <div className={style.description}>
                                     <i>{des}</i>
+                                </div>
+                                <div className={style.description}>
                                     <div className={style.linksButtons}>
                                         <a href={link} target='_blank'><button type='button'>Repo <RxGithubLogo /></button></a>
                                         {demo ? <a href={demo} target='_blank'><button type='button'>Demo <RiExternalLinkLine /></button></a> : ''}
