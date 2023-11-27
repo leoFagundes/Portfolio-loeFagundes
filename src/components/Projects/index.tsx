@@ -20,7 +20,8 @@ export default function Projects() {
         name: 'Portfólio 1.0', 
         des: 'Esse foi o primeiro Portfólio que fiz para ter um lugar onde colocar os meus projetos e falar um pouco mais sobre mim.', 
         ling: 'HTML, CSS, JavaScript', 
-        link: 'https://github.com/leoFagundes/Portfolio' },
+        link: 'https://github.com/leoFagundes/Portfolio',
+        demo: 'https://portfolioleo-1.netlify.app/' },
     { 
         imageName: 'assets/img/projects/portfolio2.png', 
         name: 'Portfólio 2.0', 
@@ -38,11 +39,12 @@ export default function Projects() {
         name: 'Lista de Tarefas', 
         des: 'Uma lista de tarefas onde podemos adicionar e excluir post-its, eles se alocam dinamicamente.', 
         ling: 'HTML, CSS, JavaScript', 
-        link: 'https://github.com/leoFagundes/Lista-de-Tarefas-JS' },
+        link: 'https://github.com/leoFagundes/Lista-de-Tarefas-JS',
+        demo: 'https://lista-tarefas-leo.netlify.app/index.html' },
     { 
         imageName: 'assets/img/projects/rpg.jpg', 
         name: 'RPG de terminal', 
-        des: 'Projeto que fiz para treinar Programação Orientada a Objeto. Fiz um sistema de Dungeons em que o aventureiro, que tem diversos atributos, tenha que derrotar os monstros da dungeon e matar o boss. Existe um sistema de loot, inventário, loja, ouro e entre outros.', 
+        des: 'Projeto que fiz para treinar Programação Orientada a Objeto. Fiz um sistema de Dungeons com sistema de loot, inventário, loja, ouro e entre outros.', 
         ling: 'Python', 
         link: 'https://github.com/leoFagundes/RPG-Python' },
     { 
@@ -56,7 +58,8 @@ export default function Projects() {
         name: 'Currículo HTML', 
         des: 'Currículo feito para treinar HTML e CSS', 
         ling: 'HTML, CSS', 
-        link: 'https://github.com/leoFagundes/CurriculoHTML' },
+        link: 'https://github.com/leoFagundes/CurriculoHTML',
+        demo: 'https://cvhtml-2.netlify.app/' },
     { 
         imageName: 'assets/img/projects/comunidade-prog.png', 
         name: 'Comunidade de Programação', 
@@ -68,7 +71,8 @@ export default function Projects() {
         name: 'Jogo da Velha', 
         des: 'Jogo da Velha feito para treinar JavaScript', 
         ling: 'HTML, CSS, JavaScript', 
-        link: 'https://github.com/leoFagundes/Jogo-Da-Velha-JS' },
+        link: 'https://github.com/leoFagundes/Jogo-Da-Velha-JS',
+        demo: 'https://jogodavelha-leo.netlify.app/' },
     ];
 
     const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
