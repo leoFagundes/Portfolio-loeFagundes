@@ -13,7 +13,8 @@ export default function Projects() {
         name: 'Aplicação Web - Imikino', 
         des: 'Site criado com o objetivo de avaliar jogos feito para o quinto semestre da faculdade. Possui sistema de login, ranking e avaliação', 
         ling: 'Python (Flask), HTML, CSS, JavaScript, Bootstrap', 
-        link: 'https://github.com/leoFagundes/AplicacaoWeb-Imikino'
+        link: 'https://github.com/leoFagundes/AplicacaoWeb-Imikino',
+        demo: 'https://aplicacaoweb-imikino-production.up.railway.app/'
     },
     { 
         imageName: 'assets/img/projects/portfolio2.png', 
