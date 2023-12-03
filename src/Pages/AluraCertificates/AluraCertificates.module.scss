@@ -1,7 +1,7 @@
 .AluraCertificatesContainer {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
 }
 
 .certificate {
@@ -11,7 +11,7 @@
     gap: 25px;
 
     img {
-        height: 400px;
+        height: 300px;
         box-shadow: 0 0 10px rgba(44, 131, 189, 0.5);
         
         &:hover {

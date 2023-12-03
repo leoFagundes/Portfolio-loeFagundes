@@ -9,7 +9,7 @@ const aluraCertificates = [
         horas: '10',
         ano: '2023',
         linkPdf: 'assets/pdf/Leonardo Fagundes - Curso JavaScript para Web_ Crie páginas dinâmicas - Alura.pdf',
-        link: 'assets/img/aluraImages/Leonardo Fagundes - Curso JavaScript para Web_ Crie páginas dinâmicas - Alura.png',
+        link: 'assets/img/aluraImages/JavaScript para Web Crie páginas dinâmicas.png',
     },
     {
         nome: 'CSS: FlexBox e Layouts responsivos',
@@ -17,15 +17,15 @@ const aluraCertificates = [
         horas: '6',
         ano: '2023',
         linkPdf: 'assets/pdf/Leonardo Fagundes - Curso CSS_ Flexbox e layouts responsivos - Alura.pdf',
-        link: 'assets/img/aluraImages/Leonardo Fagundes - Curso CSS_ Flexbox e layouts responsivos - Alura.png',
+        link: 'assets/img/aluraImages/CSS Flexbox e layouts responsivos.png',
     },
     {
         nome: 'React: Desenvolvimento com JavaScript',
         instituicao: 'Alura',
         horas: '14',
         ano: '2023',
-        linkPdf: 'assets/pdf/Curso React_ desenvolvendo com JavaScript - Alura.pdf',
-        link: 'assets/img/aluraImages/Leonardo Fagundes - Curso React_ desenvolvendo com JavaScript - Alura.png',
+        linkPdf: 'assets/pdf/Leonardo Fagundes - Curso React_ desenvolvendo com JavaScript - Alura.pdf',
+        link: 'assets/img/aluraImages/React desenvolvendo com JavaScript.png',
     },
     {
         nome: 'React: Escrevendo com Typescript',
@@ -33,7 +33,7 @@ const aluraCertificates = [
         horas: '12',
         ano: '2023',
         linkPdf: 'assets/pdf/Leonardo Fagundes - Curso React_ escrevendo com Typescript - Alura.pdf',
-        link: 'assets/img/aluraImages/Leonardo Fagundes - Curso React_ escrevendo com Typescript - Alura.png',
+        link: 'assets/img/aluraImages/React escrevendo com Typescript.png',
     },
     {
         nome: 'Tailwind CSS: Estilizando a sua página com classes utilitárias',
@@ -41,14 +41,21 @@ const aluraCertificates = [
         horas: '8',
         ano: '2023',
         linkPdf: 'assets/pdf/Leonardo Fagundes - Curso Tailwind CSS_ estilizando a sua página com classes utilitárias - Alura.pdf',
-        link: 'assets/img/aluraImages/Leonardo Fagundes - Curso Tailwind.png',
+        link: 'assets/img/aluraImages/Tailwind CSS estilizando a sua página com classes utilitárias.png',
+    },{
+        nome: 'React: comece seu projeto full stack',
+        instituicao: 'Alura',
+        horas: '12',
+        ano: '2023',
+        linkPdf: 'assets/pdf/Leonardo Fagundes - Curso React_ comece seu projeto full stack - Alura.pdf',
+        link: 'assets/img/aluraImages/React comece seu projeto full stack.png',
     },{
         nome: 'Git e GitHub: Compartilhando e colaborando em projetos',
         instituicao: 'Alura',
         horas: '8',
         ano: '2023',
         linkPdf: 'assets/pdf/Leonardo Fagundes - Curso Git e GitHub_ compartilhando e colaborando em projetos - Alura.pdf',
-        link: 'assets/img/aluraImages/Leonardo Fagundes - Curso Git.png',
+        link: 'assets/img/aluraImages/Git e GitHub compartilhando e colaborando em projetos.png',
     },
 ]
 

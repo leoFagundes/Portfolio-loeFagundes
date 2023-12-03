@@ -41,8 +41,8 @@ function Certificados() {
     {
       nome: 'Certificados da Alura',
       instituicao: 'Alura',
-      horas: '-',
-      ano: '-',
+      horas: '--',
+      ano: '2023>',
       link: '-',
     },
     {
