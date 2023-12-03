@@ -1,6 +1,8 @@
+@use '../../variables' as v;
+
 .Projects {
     width: 100%;
-    background-color: rgb(15, 15, 15);
+    background-color: v.$background-color1;
     min-height: 550px;
 
     .projectsContainer {

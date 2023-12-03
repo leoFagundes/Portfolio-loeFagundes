@@ -1,5 +1,7 @@
+@use '../../variables' as v;
+
 .Skills {
-    background-color: rgb(11, 11, 11);
+    background-color: v.$background-color2;
     display: flex;
     flex-direction: column;
     align-items: center;

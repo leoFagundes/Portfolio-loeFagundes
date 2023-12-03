@@ -1,3 +1,4 @@
+@use '../../variables' as v;
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
 
@@ -6,7 +7,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: rgb(15, 15, 15);
+    background-color: v.$background-color1;
     min-height: 100vh;
     margin-top: 70px;
 
