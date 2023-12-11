@@ -9,6 +9,14 @@ export default function Projects() {
 
     const projetos = [
     { 
+        imageName: 'assets/img/projects/mybooksleo.png', 
+        name: 'MyBooks.leo', 
+        des: 'Repositório para visualizar os livros que já li ao longo da minha vida de uma maneira organizada e com sistema de filtro.', 
+        ling: 'Next.js, Styled-Components, SCSS', 
+        link: 'https://github.com/leoFagundes/MyBooks.leo',
+        demo: 'https://mybooksleo.vercel.app/'
+    },
+    { 
         imageName: 'assets/img/projects/imikino.png', 
         name: 'Aplicação Web - Imikino', 
         des: 'Site criado com o objetivo de avaliar jogos feito para o quinto semestre da faculdade. Possui sistema de login, ranking e avaliação', 
@@ -20,7 +28,7 @@ export default function Projects() {
         imageName: 'assets/img/projects/portfolio2.png', 
         name: 'Portfólio 2.0', 
         des: 'Esse foi o segundo Portfólio que fiz para tentar criar uma versão mais atualizada do portfólio anterior.', 
-        ling: 'HTML, CSS, JavaScript, React', 
+        ling: 'React, SCSS, HTML', 
         link: 'https://github.com/leoFagundes/Portfolio-leoFagundes',
         demo: 'https://leofagundes.vercel.app/' },
     { 
@@ -44,7 +52,7 @@ export default function Projects() {
         link: 'https://github.com/leoFagundes/Lista-de-Tarefas-JS',
         demo: 'https://lista-tarefas-leo.netlify.app/index.html' },
     { 
-        imageName: 'assets/img/projects/rpg.jpg', 
+        imageName: 'assets/img/projects/rpg.png', 
         name: 'RPG de terminal', 
         des: 'Projeto que fiz para treinar Programação Orientada a Objeto. Fiz um sistema de Dungeons com sistema de loot, inventário, loja, ouro e entre outros.', 
         ling: 'Python', 
