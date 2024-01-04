@@ -19,19 +19,6 @@ export const skillsData = [
       "JavaScript (JS) é uma linguagem de programação de alto nível que permite adicionar interatividade e comportamento dinâmico a sites e aplicativos web. É uma das principais tecnologias para o desenvolvimento web front-end.",
   },
   {
-    name: "HTML",
-    imgSrc: "assets/img/skills/html-logo.png",
-    descricao:
-      "HTML (HyperText Markup Language) é a linguagem de marcação usada para estruturar o conteúdo de páginas da web. Ele define a estrutura do documento, como cabeçalhos, parágrafos, links e elementos de formulário.",
-  },
-  {
-    name: "CSS",
-    imgSrc: "assets/img/skills/css-logo2.png",
-    descricao:
-      "CSS (Cascading Style Sheets) é usado para estilizar páginas da web, controlando a aparência e o layout dos elementos HTML. Ele permite a criação de designs atraentes e responsivos.",
-  },
-
-  {
     name: "TypeScript",
     imgSrc: "assets/img/skills/ts-logo.png",
     descricao:
@@ -44,10 +31,22 @@ export const skillsData = [
       "React é uma biblioteca JavaScript para a criação de interfaces de usuário (UI). Ela é usada para desenvolver aplicativos web interativos e reativos, facilitando a construção de componentes reutilizáveis.",
   },
   {
-    name: "SQL",
-    imgSrc: "assets/img/skills/sql-logo2.png",
+    name: "Next",
+    imgSrc: "assets/img/skills/next-logo.png",
     descricao:
-      "SQL (Structured Query Language) é uma linguagem de consulta usada para gerenciar e manipular bancos de dados relacionais. É essencial para armazenar, recuperar e gerenciar dados de forma eficiente.",
+      "Next.js é um framework para React que facilita a construção de aplicativos web React com renderização do lado do servidor, roteamento automático e muitas outras funcionalidades úteis para desenvolvimento web moderno.",
+  },
+  {
+    name: "HTML",
+    imgSrc: "assets/img/skills/html-logo.png",
+    descricao:
+      "HTML (HyperText Markup Language) é a linguagem de marcação usada para estruturar o conteúdo de páginas da web. Ele define a estrutura do documento, como cabeçalhos, parágrafos, links e elementos de formulário.",
+  },
+  {
+    name: "CSS",
+    imgSrc: "assets/img/skills/css-logo2.png",
+    descricao:
+      "CSS (Cascading Style Sheets) é usado para estilizar páginas da web, controlando a aparência e o layout dos elementos HTML. Ele permite a criação de designs atraentes e responsivos.",
   },
   {
     name: "Tailwind",
@@ -74,9 +73,9 @@ export const skillsData = [
       "SASS (Syntactically Awesome Stylesheets) é uma linguagem de extensão do CSS que adiciona funcionalidades como variáveis, aninhamento de seletores e mixins. Facilita a escrita e manutenção de estilos complexos.",
   },
   {
-    name: "Next",
-    imgSrc: "assets/img/skills/next-logo.png",
+    name: "SQL",
+    imgSrc: "assets/img/skills/sql-logo2.png",
     descricao:
-      "Next.js é um framework para React que facilita a construção de aplicativos web React com renderização do lado do servidor, roteamento automático e muitas outras funcionalidades úteis para desenvolvimento web moderno.",
+      "SQL (Structured Query Language) é uma linguagem de consulta usada para gerenciar e manipular bancos de dados relacionais. É essencial para armazenar, recuperar e gerenciar dados de forma eficiente.",
   },
 ];
