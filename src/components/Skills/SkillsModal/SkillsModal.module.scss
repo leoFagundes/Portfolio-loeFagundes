@@ -1,0 +1,160 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(61, 61, 61, 0.5);
+  animation: startModal 0.7s ease-in-out forwards;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .modalBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-height: 400px;
+    width: 600px;
+    background-color: rgb(16, 16, 16);
+    border-radius: 20px;
+    box-shadow: inset 0 1px 10px #54d48981;
+    color: white;
+    gap: 10px;
+    padding: 10px;
+    animation: startModalBody 0.5s ease-in-out forwards;
+
+    &:hover {
+      cursor: default;
+    }
+
+    .skillInfo {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 90%;
+      text-align: center;
+    }
+
+    .relatedProjects {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 10px;
+
+      @media screen and (max-width: 680px) {
+        overflow-y: scroll;
+      }
+
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #24a359;
+        border-radius: 6px;
+        border: 1px solid #333;
+
+        &:hover {
+          background-color: rgb(63, 196, 114);
+        }
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: #333333;
+      }
+
+      & > div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .projectCard {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          border: 1px solid #54d489;
+          margin: 10px;
+          padding: 10px;
+          border-radius: 10px;
+          height: 100px;
+          width: 150px;
+
+          p {
+            font-size: 14px;
+            text-align: center;
+            font-weight: bold;
+          }
+
+          .linksButtons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            a {
+              text-decoration: none;
+
+              button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                border: 1px solid #54d489;
+                background-color: transparent;
+                color: white;
+                box-shadow: 0 0 5px #54d4897e;
+                padding: 8px;
+                border-radius: 10px;
+
+                &:hover {
+                  cursor: pointer;
+                  box-shadow: inset 0 0 5px #54d4897e;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .closeIcon {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+
+      &:hover {
+        cursor: pointer;
+        scale: 0.95;
+      }
+    }
+
+    @media screen and (max-width: 679px) {
+      height: 90%;
+      width: 90%;
+    }
+  }
+}
+
+@keyframes startModalBody {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes startModal {
+  0% {
+    backdrop-filter: blur(0);
+  }
+  100% {
+    backdrop-filter: blur(3px);
+  }
+}
