@@ -19,7 +19,7 @@ export const projetctData = [
     imageName: "assets/img/projects/portfolio2.png",
     name: "Portfólio 2.0",
     des: "Esse foi o segundo Portfólio que fiz para tentar criar uma versão mais atualizada do portfólio anterior.",
-    ling: "React.js e SASS",
+    ling: "React.js, TypeScript e SASS",
     link: "https://github.com/leoFagundes/Portfolio-leoFagundes",
     demo: "https://leofagundes.vercel.app/",
   },
