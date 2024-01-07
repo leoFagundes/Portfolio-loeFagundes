@@ -45,6 +45,7 @@
       align-items: center;
       width: 100%;
       gap: 10px;
+      margin-top: 20px;
 
       @media screen and (max-width: 680px) {
         overflow-y: scroll;
@@ -82,11 +83,11 @@
           margin: 10px;
           padding: 10px;
           border-radius: 10px;
-          height: 100px;
+          height: 75px;
           width: 150px;
 
           p {
-            font-size: 14px;
+            font-size: 12px;
             text-align: center;
             font-weight: bold;
           }
@@ -94,6 +95,7 @@
           .linksButtons {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             align-items: center;
             gap: 10px;
 
@@ -111,6 +113,9 @@
                 box-shadow: 0 0 5px #54d4897e;
                 padding: 8px;
                 border-radius: 10px;
+                height: 30px;
+                width: 70px;
+                font-size: 12px;
 
                 &:hover {
                   cursor: pointer;
