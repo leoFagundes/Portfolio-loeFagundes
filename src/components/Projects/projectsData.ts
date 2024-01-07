@@ -89,4 +89,12 @@ export const projetctData = [
         ling: 'HTML, CSS, JavaScript', 
         link: 'https://github.com/leoFagundes/Jogo-Da-Velha-JS',
         demo: 'https://jogodavelha-leo.netlify.app/' },*/
+  {
+    imageName: "assets/img/projects/weatherAPI.png",
+    name: "Weather Forecast",
+    des: "Site para previsão de tempo usando uma API pública OpenWeatherMap",
+    ling: "React.js, TypeScript e Tailwind",
+    link: "https://github.com/leoFagundes/Weather-API",
+    demo: "https://weather-api-leo.vercel.app/",
+  },
 ];
