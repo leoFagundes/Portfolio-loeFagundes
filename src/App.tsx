@@ -7,6 +7,7 @@ import Me from './components/Me';
 import NavBar from './components/NavBar';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import SendEmail from './components/SendEmail/SendEmail';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Projects />
             <Skills />
             <Certificates />
+            <SendEmail />
           </>} />
           <Route path="/Certificados-Alura" element={<AluraCertificates />} />
         </Routes>

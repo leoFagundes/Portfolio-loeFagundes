@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import { skillProps } from '..'
 import { projetctData } from '../../Projects/projectsData';
 import Title from '../../Title';
@@ -21,15 +22,18 @@ const SkillsModal = ({ handleClose, modalData }: Props) => {
                     <AiOutlineClose onClick={handleClose} size={25} color='#54d489' className={style.closeIcon} />
                     <div className={style.skillInfo}>
                         <Title titleName={modalData.name} />
-                        <p>{modalData.descricao}</p>
+                        <div>
+                            <p>{modalData.descricao}</p>
+                            <img src={modalData.imgSrc} alt={modalData.name + "Img"} className={style.imgSkillLogo} />
+                        </div>
                     </div>
                     <div className={style.relatedProjects}>
                         <h1>Projetos Relacionados</h1>
                         <div>
                             {projectsData.map((projectData, index) => (
-                                <>
+                                <Fragment key={modalData.name + index}>
                                     {projectData.ling.includes(modalData.name) ? (
-                                        <div key={index} className={style.projectCard}>
+                                        <div className={style.projectCard}>
                                             <p>{projectData.name}</p>
                                             <div className={style.linksButtons}>
                                                 <a href={projectData.link} target='_blank'><button type='button'>Repo <RxGithubLogo /></button></a>
@@ -37,7 +41,7 @@ const SkillsModal = ({ handleClose, modalData }: Props) => {
                                             </div>
                                         </div>
                                     ) : ''}
-                                </>
+                                </Fragment>
                             ))}
                         </div>
                     </div>

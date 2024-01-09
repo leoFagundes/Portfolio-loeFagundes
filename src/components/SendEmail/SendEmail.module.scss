@@ -1,0 +1,129 @@
+@use "../../variables" as v;
+
+.sendEmailContainer {
+  background-color: v.$background-color2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  //height: 50vh;
+  //min-height: 600px;
+  position: relative;
+  padding-bottom: 40px;
+
+  & > section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .containerField {
+      display: flex;
+      flex-direction: column;
+
+      .textField {
+        width: 400px;
+        padding: 10px 10px;
+        border: 2px solid #24a359;
+        background-color: v.$background-color2;
+        outline: none;
+        color: white;
+
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.658);
+        }
+
+        &:focus {
+          outline-color: #24a359;
+          box-shadow: inset 0 0 5px #54d48977;
+        }
+      }
+    }
+
+    .button {
+      width: 150px;
+      padding: 10px 20px;
+      background-color: #2d8150;
+      color: #fff;
+      border: 1px solid rgb(1, 99, 66);
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-bottom: 10px;
+
+      &:hover {
+        background-color: #26816a;
+      }
+    }
+  }
+
+  .rightContent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    h1 {
+      color: white;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    p {
+      color: #54d489;
+    }
+
+    .networks {
+      display: flex;
+      margin-top: 10px;
+      gap: 20px;
+      padding: 10px;
+    }
+  }
+
+  @media screen and (max-width: 660px) {
+    .rightContent {
+      justify-content: center;
+      text-align: center;
+
+      .networks {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .form {
+      .containerField {
+        .textField {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+.invalidField {
+  width: 400px;
+  padding: 10px 10px;
+  border: 2px solid #db5416c0;
+  outline: none;
+  background-color: v.$background-color2;
+  color: white;
+
+  &:focus {
+    outline-color: #db5416c0;
+    box-shadow: inset 0 0 5px #db5416c0;
+  }
+
+  &::placeholder {
+    color: #ffa17cc0;
+  }
+}

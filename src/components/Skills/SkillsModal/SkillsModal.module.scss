@@ -37,6 +37,23 @@
       flex-direction: column;
       width: 90%;
       text-align: center;
+
+      & > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .imgSkillLogo {
+          margin-left: 15px;
+          height: 120px;
+          max-width: 160px;
+          border-radius: 20px;
+
+          @media screen and (max-width: 679px) {
+            display: none;
+          }
+        }
+      }
     }
 
     .relatedProjects {
