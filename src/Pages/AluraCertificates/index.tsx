@@ -42,14 +42,21 @@ const aluraCertificates = [
         ano: '2023',
         linkPdf: 'assets/pdf/Leonardo Fagundes - Curso Tailwind CSS_ estilizando a sua página com classes utilitárias - Alura.pdf',
         link: 'assets/img/aluraImages/Tailwind CSS estilizando a sua página com classes utilitárias.png',
-    },{
+    }, {
         nome: 'React: comece seu projeto full stack',
         instituicao: 'Alura',
         horas: '12',
         ano: '2023',
         linkPdf: 'assets/pdf/Leonardo Fagundes - Curso React_ comece seu projeto full stack - Alura.pdf',
         link: 'assets/img/aluraImages/React comece seu projeto full stack.png',
-    },{
+    }, {
+        nome: 'Node.js: Criando uma API Rest com Express e MongoDB',
+        instituicao: 'Alura',
+        horas: '10',
+        ano: '2024',
+        linkPdf: 'assets/pdf/Leonardo Fagundes - Curso Node.js_ criando uma API Rest com Express e MongoDB - Alura.pdf',
+        link: 'assets/img/aluraImages/Node criando uma API rest com Express.png',
+    }, {
         nome: 'Git e GitHub: Compartilhando e colaborando em projetos',
         instituicao: 'Alura',
         horas: '8',
@@ -60,11 +67,11 @@ const aluraCertificates = [
 ]
 
 export default function AluraCertificates() {
-    return(
+    return (
         <section className={style.AluraCertificatesContainer}>
             <Title titleName='Certificados da Alura' />
             <section className={style.certificate}>
-                {aluraCertificates.map(({nome, instituicao, horas, ano, linkPdf, link}) => (
+                {aluraCertificates.map(({ nome, instituicao, horas, ano, linkPdf, link }) => (
                     <a href={linkPdf} key={nome} target='_blank'>
                         <img src={link} alt={nome} />
                     </a>
