@@ -1,3 +1,5 @@
+@use "../../../variables" as v;
+
 .modal {
   display: flex;
   justify-content: center;
@@ -19,7 +21,7 @@
     position: relative;
     min-height: 400px;
     width: 600px;
-    background-color: rgb(16, 16, 16);
+    background-color: v.$background-color2;
     border-radius: 20px;
     box-shadow: inset 0 1px 10px #54d48981;
     color: white;
@@ -97,8 +99,9 @@
           align-items: center;
           justify-content: space-around;
           border: 1px solid #54d489;
+          box-shadow: inset 0 0 5px #54d4897e;
           margin: 10px;
-          padding: 10px;
+          padding: 10px 20px;
           border-radius: 10px;
           height: 75px;
           width: 150px;
@@ -106,7 +109,7 @@
           p {
             font-size: 12px;
             text-align: center;
-            font-weight: bold;
+            font-weight: 500;
           }
 
           .linksButtons {
@@ -124,19 +127,22 @@
                 align-items: center;
                 justify-content: center;
                 gap: 5px;
-                border: 1px solid #54d489;
-                background-color: transparent;
+                border: transparent;
+                background-color: v.$background-color1;
                 color: white;
-                box-shadow: 0 0 5px #54d4897e;
                 padding: 8px;
                 border-radius: 10px;
                 height: 30px;
                 width: 70px;
                 font-size: 12px;
+                transition: 0.3s ease-in-out;
+                box-shadow: 0 0 3px #fdfdfd3f;
 
                 &:hover {
                   cursor: pointer;
-                  box-shadow: inset 0 0 5px #54d4897e;
+                  border: 1px solid #54d489;
+                  box-shadow: 0 0 5px #54d4893f;
+                  background-color: v.$background-color2;
                 }
               }
             }
