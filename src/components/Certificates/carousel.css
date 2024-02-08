@@ -19,6 +19,16 @@
 
 .p-icon {
   color: white;
+  width: 18px;
+  height: 18px;
+}
+
+.p-icon:hover {
+  scale: 1.1;
+}
+
+.p-icon:active {
+  scale: 0.9;
 }
 
 .p-disabled {
