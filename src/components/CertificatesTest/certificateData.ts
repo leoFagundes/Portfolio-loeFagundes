@@ -1,4 +1,4 @@
-export interface Certificado {
+interface Certificado {
   nome: string;
   instituicao: string;
   horas: string;

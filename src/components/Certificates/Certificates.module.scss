@@ -1,124 +1,89 @@
-@use '../../variables' as v;
-@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap');
+@use "../../variables" as v;
+@import url("https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap");
 
 .Certificates {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: v.$background-color1;
-    min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: v.$background-color1;
+  min-height: 350px;
+  overflow-x: hidden;
 }
 
 .containerCertificates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  color: white;
+  flex: 1;
+  width: 100%;
+
+  @media screen and (min-width: 820px) {
+    width: 80%;
+  }
+}
+
+.certificateCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: v.$background-color2;
+  margin: 10px;
+  padding: 10px 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #409764;
+  height: 200px;
+
+  .certificateTitle {
+    height: 40px;
+  }
+
+  .info {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 17px;
-    color: white;
-    flex: 1;
-    width: 60%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 90%;
+    font-family: "Times New Roman", serif;
+    margin-top: 10px;
+    gap: 5px;
 
-    .carousel{
-        cursor: grab;
-        overflow: hidden;
-        border-right: 1px solid #ffffff4b;
-        border-left: 1px solid #ffffff4b;
-        margin-right: -10px;
-        margin-left: -10px;
-        width: 100%;
+    p {
+      display: flex;
+      gap: 2px;
+      font-size: 14px;
+      padding: 0;
+      padding-left: 5px;
+      color: rgb(138, 138, 138);
 
-        .inner {
-            display: flex;
-            justify-content: flex-start;
-
-            .itemCarousel {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                min-height: 270px;
-                min-width: 230px;
-                width: 230px;
-                margin: 10px;
-                gap: 20px;
-                border-radius: 5px;
-                box-shadow: 0 0 5px #409764;
-                padding: 5px;
-
-                .certificateTitle {
-                    height: 50px;
-                    width: 90%;
-
-                    h3 {
-                        text-align: center;
-                        color: #19ac73;
-                        word-wrap: break-word;
-                        overflow-wrap: break-word;
-                        font-family: 'Times New Roman', serif;
-                    }
-                }
-
-                .pdfLink {
-                    text-decoration: none; 
-
-                    button {
-                        padding: 10px 20px;
-                        background-color: #2d8150;
-                        color: #fff; 
-                        border: 1px solid rgb(1, 99, 66);
-                        border-radius: 5px;
-                        cursor: pointer;
-                        transition: background-color 0.3s; 
-                        margin-bottom: 10px;
-
-                        &:hover {
-                            background-color: #26816a;
-                        }
-
-                    }
-                }
-
-                .info {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    justify-content: space-around;
-                    width: 90%;
-                    height: 120px;
-                    font-family: 'Times New Roman', serif;
-
-                    p{
-                        font-size: 14px;
-                        padding: 0;
-                        padding-left: 5px;
-                        color: rgb(138, 138, 138);
-
-                        span {
-                            color: white;
-                        }
-                    }
-                }
-            }
-        }
+      span {
+        white-space: nowrap;
+        color: white;
+      }
     }
+  }
 
-    .staticButton {
-        button {
-            background-color: rgba(0, 0, 0, 0);
-            border: none;
-            margin-top: 18px;
-            -webkit-tap-highlight-color: transparent;
-            opacity: 0.3;
-            padding: 3px;
+  .pdfLink {
+    margin-top: 15px;
+    text-decoration: none;
 
-            img {
-                height: 30px;
-            }
-        }
+    button {
+      padding: 10px 20px;
+      background-color: #2d8150;
+      color: #fff;
+      border: 1px solid rgb(1, 99, 66);
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-bottom: 10px;
+
+      &:hover {
+        background-color: #26816a;
+      }
     }
-
-    @media screen and (max-width: 1000px) {
-        width: 100%;
-    }
+  }
 }

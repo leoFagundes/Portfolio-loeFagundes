@@ -6,21 +6,23 @@ import SlideProject from "./SlideProject";
 import { projetctData } from "./projectsData";
 
 export default function Projects() {
-  const projetos = projetctData
+  const projetos = projetctData;
 
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
-  const [classByButtonClicked, setClassByButtonClicked] = useState<'prevClicked' | 'nextClicked' | null>(null)
+  const [classByButtonClicked, setClassByButtonClicked] = useState<
+    "prevClicked" | "nextClicked" | null
+  >(null);
 
   const handleNextProject = () => {
     setCurrentProjectIndex((currentProjectIndex + 1) % projetos.length);
-    setClassByButtonClicked('nextClicked')
+    setClassByButtonClicked("nextClicked");
   };
 
   const handlePrevProject = () => {
     setCurrentProjectIndex(
       (currentProjectIndex - 1 + projetos.length) % projetos.length
     );
-    setClassByButtonClicked('prevClicked')
+    setClassByButtonClicked("prevClicked");
   };
 
   const lastIndex = projetos.length - 1;
@@ -42,6 +44,7 @@ export default function Projects() {
             currentProjectIndex={currentProjectIndex}
             projectList={projetos}
             classByButtonClicked={classByButtonClicked}
+            handleClick={handlePrevProject}
           />
           <SlideProject
             currentProject={true}
@@ -55,6 +58,7 @@ export default function Projects() {
             currentProjectIndex={currentProjectIndex}
             projectList={projetos}
             classByButtonClicked={classByButtonClicked}
+            handleClick={handleNextProject}
           />
         </section>
         <Button
