@@ -89,7 +89,6 @@ export default function index() {
           value={certificados}
           responsiveOptions={responsiveOptions}
           itemTemplate={certificateTemplate}
-          showNavigators
         />
       </section>
     </section>
