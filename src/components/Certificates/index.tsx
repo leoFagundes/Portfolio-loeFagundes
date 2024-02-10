@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./carousel.css";
 
-export default function index() {
+export default function Certificates() {
   const responsiveOptions = [
     {
       breakpoint: "3000px",
@@ -82,7 +82,7 @@ export default function index() {
   };
 
   return (
-    <section id="Certificates" className={style.Certificates}>
+    <section id="Certificates" className={`${style.certificates} certificates`}>
       <Titulo titleName="Certificados" />
       <section className={style.containerCertificates}>
         <Carousel

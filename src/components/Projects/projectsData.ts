@@ -1,3 +1,12 @@
+export type typeProjectData = {
+  imageName: string;
+  name: string;
+  des: string;
+  ling: string;
+  link: string;
+  demo: string;
+};
+
 export const projetctData = [
   {
     imageName: "assets/img/projects/mybooksleo.png",
