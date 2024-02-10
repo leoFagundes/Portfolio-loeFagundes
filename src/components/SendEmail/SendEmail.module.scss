@@ -24,8 +24,8 @@
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    height: 224px;
-    width: 284px;
+    height: 284px;
+    width: 424px;
     position: relative;
 
     p {
@@ -135,6 +135,10 @@
   }
 
   @media screen and (max-width: 500px) {
+    .loading {
+      width: 324px;
+    }
+
     .form {
       align-items: center;
 
