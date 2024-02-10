@@ -57,8 +57,8 @@ export default function index() {
             href={certificate.link}
           >
             <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              whileHover={{ scale: 1. }}
+              whileTap={{ scale: 1 }}
             >
               Ver certificado
             </motion.button>
@@ -70,8 +70,8 @@ export default function index() {
             target="_blank"
           >
             <motion.button
-              whileHover={{ scale: 1.01 }}
-              whileTap={{ scale: 0.95 }}
+              whileHover={{ scale: 1 }}
+              whileTap={{ scale: 1 }}
             >
               Ver certificado
             </motion.button>

@@ -1,87 +1,106 @@
-@use '../../variables' as v;
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+@use "../../variables" as v;
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap");
 
 .Me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: v.$background-color1;
+  min-height: 100vh;
+  margin-top: 70px;
+
+  section {
+    width: 80%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    background-color: v.$background-color1;
-    min-height: 100vh;
-    margin-top: 70px;
+    justify-content: space-around;
 
-    section {
-        width: 80%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-
-        .networks {
-            display: flex;
-            margin-top: 10px;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            padding: 10px;
-            border-radius: 20px;
-            background-color: rgba(36, 36, 36, 0.685);
-        }
-
-        h1 {
-            font-size: 55px;
-            color: white;
-            font-family: 'Quicksand', sans-serif;
-            text-align: center;
-        }
-    
-        h2 {
-            font-size: 20px;
-            color: #54d489;
-            font-family: 'Press Start 2P', cursive;
-            text-align: center;
-        }
-    
-        .nameSection {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            flex-grow: 1;
-            margin-left: 10px;
-        }
-    
-        .imageSection {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-grow: 2;
-    
-            .border {
-                height: 260px;
-                width: 260px;
-                border: 2px solid #ffffffe8;
-                box-shadow: 0px 0px 143px 3px rgba(45, 204, 109, 0.26);
-                border-radius: 50%;
-                z-index: 2;
-
-                &:hover {
-                    cursor: grab;
-                }
-                
-                .profileImage {
-                    height: 260px;
-                    width: 260px;
-                    pointer-events: none;
-                    object-fit: cover;
-                    border-radius: 50%;
-                }
-            }
-
-            @media screen and (max-width: 1080px) {
-                display: none;
-            }
-        }
+    .networks {
+      display: flex;
+      margin-top: 10px;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 10px;
+      border-radius: 20px;
+      background-color: rgba(36, 36, 36, 0.685);
     }
+
+    h1 {
+      font-size: 55px;
+      color: white;
+      font-family: "Quicksand", sans-serif;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #54d489;
+      font-family: "Press Start 2P", cursive;
+      text-align: center;
+    }
+
+    .nameSection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      flex-grow: 1;
+      margin-left: 10px;
+    }
+
+    .imageSection {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 2;
+
+      .secretMessage {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 1;
+        gap: 8px;
+
+        p {
+          font-family: "Press Start 2P", cursive;
+          font-size: 9px;
+          text-align: center;
+          color: rgba(211, 211, 211, 0.747);
+
+          strong {
+            color: rgb(211, 59, 59);
+          }
+        }
+      }
+
+      .border {
+        height: 260px;
+        width: 260px;
+        border: 2px solid #ffffffe8;
+        // box-shadow: 0px 0px 15px 5px rgba(45, 204, 109, 0.151);
+        border-radius: 50%;
+        z-index: 2;
+
+        &:hover {
+          cursor: grab;
+        }
+
+        .profileImage {
+          height: 260px;
+          width: 260px;
+          pointer-events: none;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+
+      @media screen and (max-width: 1080px) {
+        display: none;
+      }
+    }
+  }
 }

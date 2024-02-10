@@ -18,6 +18,25 @@
     gap: 50px;
   }
 
+  .loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    height: 224px;
+    width: 284px;
+    position: relative;
+
+    p {
+      transform: translateY(50px);
+      position: absolute;
+      color: white;
+      font-family: "Press Start 2P", cursive;
+      font-size: 10px;
+    }
+  }
+
   .form {
     display: flex;
     flex-direction: column;
@@ -117,6 +136,8 @@
 
   @media screen and (max-width: 500px) {
     .form {
+      align-items: center;
+
       .containerField {
         .textField {
           width: 300px;

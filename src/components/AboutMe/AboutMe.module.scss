@@ -15,6 +15,12 @@
     width: 80%;
     flex: 1;
 
+    .secretMessage {
+      span {
+        color: #54d489;
+      }
+    }
+
     p {
       word-wrap: break-word;
       color: white;
@@ -83,6 +89,39 @@
         animation: rotateLeft 75s linear infinite;
       }
 
+      .focus {
+        background-color: #646464;
+        height: 17px;
+        width: 17px;
+        border-radius: 50%;
+        z-index: 2;
+        scale: 3;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #54d489;
+          transition: 0.3s ease-in-out;
+        }
+      }
+
+      &:active {
+        .rotateRight {
+          animation: rotateRight 8s linear infinite, speed-up 2s forwards;
+        }
+
+        .rotateLeft {
+          animation: rotateLeft 7s linear infinite, speed-up 2s forwards;
+        }
+      }
+
+      &.rapidRotate .rotateRight {
+        animation: rotateRight 2s linear infinite;
+      }
+
+      &.rapidRotate .rotateLeft {
+        animation: rotateLeft 2s linear infinite;
+      }
+
       @media screen and (max-width: 1080px) {
         display: none;
       }
@@ -105,5 +144,11 @@
   }
   100% {
     transform: rotate(-360deg);
+  }
+}
+
+@keyframes speed-up {
+  to {
+    animation-play-state: paused;
   }
 }
