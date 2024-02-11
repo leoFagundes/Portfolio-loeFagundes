@@ -140,7 +140,7 @@ export default function SendEmail() {
                         </a>
                     </div>
                     <div>
-                        <h1>Redes Soiais</h1>
+                        <h1>Redes Sociais</h1>
                         <div className={style.networks}>
                             <SocialNetworks
                                 link='https://github.com/leoFagundes'
