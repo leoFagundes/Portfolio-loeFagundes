@@ -108,7 +108,7 @@
           position: absolute;
           height: 250px;
           width: 250px;
-          background-color: white;
+          background-color: rgb(16, 16, 16);
           border-radius: 50%;
 
           .loader {
@@ -118,7 +118,7 @@
             margin: 20px auto;
             position: relative;
             border-radius: 4px;
-            color: #000000;
+            color: white;
             background: currentColor;
             box-sizing: border-box;
             animation: animloader 0.3s 0.3s linear infinite alternate;
